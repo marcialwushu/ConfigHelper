@@ -4,7 +4,22 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>ConfigHelper</Title>
+    <Description>O ConfigHelper é uma biblioteca .NET criada para facilitar o gerenciamento e a recuperação de configurações centralizadas, utilizando o AWS Systems Manager Parameter Store como fonte segura de armazenamento de parâmetros. Além disso, a biblioteca integra logging estruturado com Serilog, permitindo o envio de logs para o Elasticsearch, o que possibilita um monitoramento e análise avançados.</Description>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/marcialwushu/ConfigHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/marcialwushu/ConfigHelper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.301" />
